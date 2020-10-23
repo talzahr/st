@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
-static int borderpx = 2;
+static char *font = "Terminus:pixelsize=11:antialias=true:autohint=true"; /* Source Code Pro Semi Bold */
+static int borderpx = 0;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -16,7 +16,7 @@ static int borderpx = 2;
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
-static char *shell = "/bin/sh";
+static char *shell = "/bin/bash";
 char *utmp = NULL;
 /* scroll program: to enable use a string like "scroll" */
 char *scroll = NULL;
@@ -91,16 +91,16 @@ char *termname = "st-256color";
  *
  *	stty tabs
  */
-unsigned int tabspaces = 8;
+unsigned int tabspaces = 3;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
+	"grey23", /*prev. black*/
+	"darkorange3",
+	"springgreen2",
 	"yellow3",
-	"blue2",
+	"deepskyblue4",
 	"magenta3",
 	"cyan3",
 	"gray90",
