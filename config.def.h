@@ -99,7 +99,7 @@ float alpha = 0.8, alphaUnfocused = 0.6;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"grey23", /*prev. black*/
+	"black", /*prev. black*/
 	"darkorange3",
 	"springgreen2",
 	"yellow3",
